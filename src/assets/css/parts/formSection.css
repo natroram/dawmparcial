@@ -1,0 +1,38 @@
+div#formSection {
+  display: table;
+  width: 100%;
+  height: 80vh;
+  padding: 0;
+  /* background: url(../../images/form-section-bg.jpg) center center no-repeat; */
+  background-color: #000;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-blend-mode: soft-light; */
+
+  padding-top: 350px;
+  padding-bottom: 200px;
+  text-align: left;
+}
+
+div#formSection h1 {
+  color: var(--colorOscuro);
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+div#formSection p {
+  font-size: 20px;
+}
+
+div#formSection .form-container,
+div#formSection .text-container {
+  padding: 0;
+}
+
+div#formSection .row {
+  margin: 0;
+}

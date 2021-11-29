@@ -1,0 +1,67 @@
+form#registrationForm {
+  max-width: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+form#registrationForm div {
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+form#registrationForm div:first-of-type {
+  padding-right: 20px;
+}
+
+form#registrationForm div:last-of-type {
+  margin: 0;
+}
+
+form#registrationForm label {
+  color: #555;
+  font-size: 16px;
+}
+
+form#registrationForm input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  background: none;
+  border: none;
+  color: #555;
+  border-bottom: var(--colorOscuro) solid 1px;
+}
+
+form#registrationForm button {
+  background-color: var(--colorOscuro);
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+}
+
+form#registrationForm button:hover {
+  background-color: var(--colorButtonHover);
+}
+
+form#registrationForm button:active {
+  outline: none;
+  background-color: var(--colorButtonActive);
+}
+
+form#registrationForm input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  form#registrationForm div {
+    padding: 0;
+  }
+  form#registrationForm {
+    padding: 0 10px;
+  }
+  form#registrationForm div:first-of-type {
+    padding-right: 0;
+  }
+}

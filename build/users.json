@@ -1,0 +1,34 @@
+[
+    {
+        "firstname": "Javier",
+        "lastname": "Vega",
+        "address": "Florida norte",
+        "email": "javavega@espol.edu.ec",
+        "password": "123",
+        "cart": []
+    },
+    {
+        "firstname": "Fabrizzio",
+        "lastname": "Ontaneda",
+        "address": "Sauces",
+        "email": "faontane@espol.edu.ec",
+        "password": "xd",
+        "cart": []
+    },
+    {
+        "firstname": "Aaron",
+        "lastname": "Franco",
+        "address": "Villa club",
+        "email": "aaalfran@espol.edu.ec",
+        "password": "123",
+        "cart": []
+    },
+    {
+        "firstname": "Natalia",
+        "lastname": "Ramirez",
+        "address": "Samborondon",
+        "email": "natroram@espol.edu.ec",
+        "password": "123",
+        "cart": []
+    }
+]

@@ -1,0 +1,32 @@
+div#registration-container {
+  min-height: 100vh;
+  max-height: 100vh;
+  min-width: 100vw;
+  max-width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorOscuro);
+}
+
+div#registration-container > div {
+  background-color: var(--colorClaro);
+  border-radius: 4px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div#registration-container h1 {
+  color: var(--colorOscuro);
+  margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+  div#registration-container > div {
+    padding: 10px;
+  }
+}
