@@ -9,6 +9,7 @@ import Profile from "../pages/profile/Profile";
 import Cart from "../pages/cart/Cart";
 import { Login } from "../pages/login/Login";
 import { Registration } from "../pages/registration/Registration";
+import { News } from "../pages/news/News";
 
 const Routes = () => {
   return (
@@ -16,6 +17,7 @@ const Routes = () => {
       <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/tienda" component={Shop}></Route>
+        <Route exact path="/noticias" component={News}></Route>
         <Route exact path="/equipo" component={OurTeam}></Route>
         <Route exact path="/contactanos" component={ContactUs}></Route>
         <Route exact path="/usuario" component={Profile}></Route>

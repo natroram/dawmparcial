@@ -1,0 +1,19 @@
+#searchBar {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+#searchBar button {
+  color: #000;
+  font-weight: bold;
+}
+
+#searchBar button:hover {
+  background-color: #ecddd6;
+}
+
+#searchBar button:active {
+  background-color: #d8cbc5;
+}

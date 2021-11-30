@@ -43,6 +43,9 @@ const Navigation = ({ userIsLogin }) => {
               <Link to="/tienda">Shop</Link>
             </li>
             <li>
+              <Link to="/noticias">News</Link>
+            </li>
+            <li>
               <Link to="/equipo">Team</Link>
             </li>
             <li>

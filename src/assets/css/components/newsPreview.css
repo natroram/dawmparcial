@@ -1,0 +1,10 @@
+.news-container {
+  background-color: aliceblue;
+  padding: 2em 3em;
+  color: #000;
+  margin-bottom: 2em;
+}
+
+.news-container h2 {
+  color: #000;
+}
