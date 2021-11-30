@@ -9,7 +9,11 @@ import Profile from "../pages/profile/Profile";
 import Cart from "../pages/cart/Cart";
 import { Login } from "../pages/login/Login";
 import { Registration } from "../pages/registration/Registration";
+<<<<<<< HEAD
 import { News } from "../pages/news/News";
+=======
+import News from "../pages/news/News";
+>>>>>>> f96bc47eaa69dd0ea91adf5a28f195a584c19af7
 
 const Routes = () => {
   return (
@@ -24,6 +28,7 @@ const Routes = () => {
         <Route exact path="/carrito" component={Cart}></Route>
         <Route exact path="/login" component={Login}></Route>
         <Route exact path="/registro" component={Registration}></Route>
+        <Route exact path="/noticias" component={News}></Route>
       </Switch>
     </Suspense>
   );
