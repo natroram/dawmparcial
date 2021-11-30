@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { NewsList } from "./parts/NewsList";
 import { ResourceLoader } from "../../components/ResourceLoader";
 import { SearchBar } from "../../components/SearchBar";
@@ -16,20 +15,3 @@ export const News = () => {
     </div>
   );
 };
-=======
-const News=() =>{
-    return(
-        
-        <div id="news" > 
-           
-            <h2 className="text-center">¿Qué hay de nuevo viejo?</h2>
-            
-        </div>
-
-    );
-
-
-};
-
-export default News;
->>>>>>> f96bc47eaa69dd0ea91adf5a28f195a584c19af7

@@ -51,9 +51,6 @@ const Navigation = ({ userIsLogin }) => {
             <li>
               <Link to="/contactanos">Contact</Link>
             </li>
-            <li>
-              <Link to="/news">News</Link>
-            </li>
             {userIsLogin ? (
               <>
                 {console.log("userIsLogin from Navigation" + userIsLogin)}
