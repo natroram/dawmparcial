@@ -1,8 +1,19 @@
 #news {
-  padding-top: 100px;
+  padding-top: 50px;
   background-color: var(--colorOscuro);
 }
 
 #news h1 {
   margin-bottom: 1em;
+}
+
+.picture{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+#titulo{
+  display: flex;
+  justify-content: center;
 }
