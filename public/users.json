@@ -5,6 +5,7 @@
         "address": "Florida norte",
         "email": "javavega@espol.edu.ec",
         "password": "123",
+        "image": "img/users/JavierVega.jpg",
         "cart": []
     },
     {
@@ -13,6 +14,7 @@
         "address": "Sauces",
         "email": "faontane@espol.edu.ec",
         "password": "xd",
+        "image": "img/users/FabrizzioOntaneda.jpg",
         "cart": []
     },
     {
@@ -21,6 +23,7 @@
         "address": "Villa club",
         "email": "aaalfran@espol.edu.ec",
         "password": "123",
+        "image": "img/users/AaronFranco.jpg",
         "cart": []
     },
     {
@@ -29,6 +32,7 @@
         "address": "Samborondon",
         "email": "natroram@espol.edu.ec",
         "password": "123",
+        "image": "img/users/NataliaRamirez.jpg",
         "cart": []
     }
 ]
