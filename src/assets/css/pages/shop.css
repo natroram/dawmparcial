@@ -7,3 +7,18 @@ div#shop {
 div#shop h1 {
   color: #ff9292;
 }
+
+@media only screen and (max-width: 600px) {
+  .shop-splitscreen > div > div {
+    flex: none;
+    width: 100%;
+  }
+  .shop-splitscreen > div {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .filters-container {
+    position: relative;
+  }
+}

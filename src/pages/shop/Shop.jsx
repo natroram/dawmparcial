@@ -16,15 +16,17 @@ export const Shop = () => {
     <div>
       <div id="shop">
         <div className="container">
-          <SplitScreen leftWeight={1} rightWeight={3}>
-            <Filters></Filters>
-            <ResourceProductsLoader
-              resourceUrl="/products.json"
-              resourceName="productsList"
-            >
-              <ProductList></ProductList>
-            </ResourceProductsLoader>
-          </SplitScreen>
+          <div className="shop-splitscreen">
+            <SplitScreen leftWeight={1} rightWeight={3}>
+              <Filters></Filters>
+              <ResourceProductsLoader
+                resourceUrl="/products.json"
+                resourceName="productsList"
+              >
+                <ProductList></ProductList>
+              </ResourceProductsLoader>
+            </SplitScreen>
+          </div>
         </div>
       </div>
     </div>
