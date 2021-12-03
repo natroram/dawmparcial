@@ -2,11 +2,11 @@ export const SearchBar = () => {
   const onSearch = (e) => {
     e.preventDefault();
 
-    const text = document.getElementById("searchBarInput").value; 
+    const text = document.getElementById("searchBarInput").value.toLowerCase(); 
     let elementos = document.getElementsByClassName("news-container");
     if (text.length > 0) {
       for (let elemento of elementos) {
-        if (elemento.innerText.includes(text)) {
+         if (elemento.innerText.toLowerCase().includes(text)) {
           elemento.classList.add("visible");
         } else {
           elemento.classList.add("hidden");
