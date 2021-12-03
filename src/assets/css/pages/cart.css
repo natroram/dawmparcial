@@ -1,0 +1,45 @@
+div#cart{
+    padding-top: 100px;
+}
+
+#cart h1{
+    color: #FF9292;
+    text-align: left;
+}
+.btn-buy{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+#buy{
+    height: 30px;
+    width: 100px;
+    background-color: #ffece3;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 3px solid #FF9292;
+
+}
+@media only screen and (max-width: 600px) {
+    
+    #cart h1{
+        padding-top: 20px;
+        font-size: x-large;
+        text-align: center;
+    }
+    .cart-splitscreen > div > div{
+        flex: none;
+        width: 100%;
+    } 
+    .cart-splitscreen >div{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #bill{
+        padding: 0;
+        
+    }
+  } 
