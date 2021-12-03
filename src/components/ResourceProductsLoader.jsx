@@ -22,12 +22,9 @@ const ResourceProductsLoader = ({
       console.log(sorterFilters);
       if (!categoryFilters.some((element) => element === "Todo")) {
         for (let i = 0; i < categoryFilters.length; i++) {
-          console.log("entro al for");
           productsFiltered = data.filter(
             (product) => product.category === categoryFilters[i]
           );
-          console.log("despues del filter");
-          console.log(productsFiltered);
         }
       } else {
         productsFiltered = data;
@@ -35,20 +32,20 @@ const ResourceProductsLoader = ({
 
       if (sorterFilters != null) {
         for (let i = 0; i < sorterFilters.length; i++) {
-          if (sorterFilters[i] === "") {
+          if (sorterFilters[i] === "Precio mas bajo") {
             // sort by price ascending
             productsFiltered.sort((x, y) => {
               return x.price - y.price;
             });
           }
-          if (sorterFilters[i] === "") {
+          if (sorterFilters[i] === "Precio mas alto") {
             // sort by price descending
             productsFiltered.sort((x, y) => {
               return y.price - x.price;
             });
           }
           // sort by name A-Z
-          if (sorterFilters[i] === "") {
+          if (sorterFilters[i] === "A - Z") {
             productsFiltered.sort((x, y) => {
               let a = x.name.toUpperCase(),
                 b = y.name.toUpperCase();
@@ -56,7 +53,7 @@ const ResourceProductsLoader = ({
             });
           }
           // sort by name Z-A
-          if (sorterFilters[i] === "") {
+          if (sorterFilters[i] === "Z - A") {
             productsFiltered.sort((x, y) => {
               let a = y.name.toUpperCase(),
                 b = x.name.toUpperCase();
@@ -64,7 +61,7 @@ const ResourceProductsLoader = ({
             });
           }
           // sort by category A-Z
-          if (sorterFilters[i] === "") {
+          if (sorterFilters[i] === "Categoria") {
             productsFiltered.sort((x, y) => {
               let a = x.category.toUpperCase(),
                 b = y.category.toUpperCase();

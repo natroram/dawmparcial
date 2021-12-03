@@ -1,5 +1,7 @@
 div#shop {
-  padding-top: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  min-height: 800px;
 }
 
 div#shop h1 {

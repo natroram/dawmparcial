@@ -5,7 +5,7 @@ import ContactUs from "../pages/contact/ContactUs";
 import Home from "../pages/home/Home";
 import { Shop } from "../pages/shop/Shop";
 import OurTeam from "../pages/team/OurTeam";
-import Profile from "../pages/profile/Profile";
+import { Profile } from "../pages/profile/Profile";
 import Cart from "../pages/cart/Cart";
 import { Login } from "../pages/login/Login";
 import { Registration } from "../pages/registration/Registration";

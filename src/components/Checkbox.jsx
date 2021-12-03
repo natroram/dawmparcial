@@ -17,14 +17,16 @@ const Checkbox = ({
 
   useEffect(() => {
     if (checked) {
-      console.log("rendered onCheking");
       if (filterType === "Category") {
+        console.log("label");
+        console.log(label);
+        console.log("filterType");
+        console.log(filterType);
         catFilterSelected(label);
       } else if (filterType === "Sorter") {
         sortFilterSelected(label);
       }
     } else {
-      console.log("rendered onUncheking");
       if (filterType === "Category") {
         catFilterUnselected(label);
       } else if (filterType === "Sorter") {
