@@ -6,16 +6,19 @@ export const Filters = () => {
       <span className="text-left">Categorias</span>
       <ul>
         <li>
-          <Checkbox label="Todo" filterType="Category"></Checkbox>
+          <label>
+            <input type="checkbox" checked={true} disabled={true}></input>{" "}
+            {"Todo"}
+          </label>
         </li>
         <li>
-          <Checkbox label="Tortas" filterType="Category"></Checkbox>
+          <Checkbox label="Torta" filterType="Category"></Checkbox>
         </li>
         <li>
           <Checkbox label="Galletas" filterType="Category"></Checkbox>
         </li>
         <li>
-          <Checkbox label="Cupcakes" filterType="Category"></Checkbox>
+          <Checkbox label="Cupcake" filterType="Category"></Checkbox>
         </li>
         <li>
           <Checkbox label="Panes" filterType="Category"></Checkbox>

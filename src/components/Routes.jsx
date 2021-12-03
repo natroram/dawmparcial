@@ -10,6 +10,7 @@ import Cart from "../pages/cart/Cart";
 import { Login } from "../pages/login/Login";
 import { Registration } from "../pages/registration/Registration";
 import { News } from "../pages/news/News";
+import { AdminPanel } from "../pages/admin/AdminPanel";
 
 const Routes = () => {
   return (
@@ -25,6 +26,7 @@ const Routes = () => {
         <Route exact path="/login" component={Login}></Route>
         <Route exact path="/registro" component={Registration}></Route>
         <Route exact path="/noticias" component={News}></Route>
+        <Route exact path="/panel-de-control" component={AdminPanel}></Route>
       </Switch>
     </Suspense>
   );

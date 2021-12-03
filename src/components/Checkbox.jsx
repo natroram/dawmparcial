@@ -18,10 +18,6 @@ const Checkbox = ({
   useEffect(() => {
     if (checked) {
       if (filterType === "Category") {
-        console.log("label");
-        console.log(label);
-        console.log("filterType");
-        console.log(filterType);
         catFilterSelected(label);
       } else if (filterType === "Sorter") {
         sortFilterSelected(label);

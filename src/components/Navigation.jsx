@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { useRef, useEffect } from "react";
 import { userHasLoggedIn } from "../actions";
 
-const Navigation = ({ userIsLogin, onUserLogin }) => {
+const Navigation = ({ userIsLogin, onUserLogin, isAdmin }) => {
   const isMountedRef = useRef(true);
   useEffect(
     () => () => {
@@ -61,6 +61,11 @@ const Navigation = ({ userIsLogin, onUserLogin }) => {
                 <li>
                   <Link to="/carrito">Cart</Link>
                 </li>{" "}
+                {isAdmin ? (
+                  <Link to="panel-de-control">Control Panel</Link>
+                ) : (
+                  ""
+                )}
                 <li className="sinEfecto">
                   <Link to="/">
                     <button
@@ -98,6 +103,7 @@ const Navigation = ({ userIsLogin, onUserLogin }) => {
 
 const mapStateToProps = (state) => ({
   userIsLogin: state.appReducer.userIsLogin,
+  isAdmin: state.admin,
 });
 
 const mapDispatchToProps = (dispatch) => ({

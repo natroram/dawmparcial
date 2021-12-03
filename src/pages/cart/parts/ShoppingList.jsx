@@ -1,12 +1,12 @@
 import Product from "../../../components/Product";
 import { RegularList } from "../../../components/RegularList";
 
-const ShoppingList = ({ usersList }) => {
-  return usersList ? (
+const ShoppingList = ({ userslist }) => {
+  return userslist ? (
     <>
       <ul>
         <RegularList
-          items={usersList[0].cart}
+          items={userslist[0].cart}
           resourceName="product"
           itemComponent={Product}
         ></RegularList>

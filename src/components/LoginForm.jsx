@@ -2,9 +2,11 @@ import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
 import { userHasLoggedIn } from "../actions";
+import { currentUserLogin } from "../actions";
+import { admin } from "../actions";
 import { useRef } from "react";
 
-const LoginForm = ({ onUserLogin }) => {
+const LoginForm = ({ onUserLogin, onCurrentUser, onAdmin }) => {
   const [info, setInfo] = useState(null);
   const [noUser, setNoUser] = useState(false);
   const [noPassword, setNoPassword] = useState(false);
@@ -28,7 +30,16 @@ const LoginForm = ({ onUserLogin }) => {
         data[i].password === formData.password
       ) {
         onUserLogin(true);
-        console.log(onUserLogin);
+
+        onCurrentUser({
+          firstname: data[i].firstname,
+          lastname: data[i].lastname,
+          address: data[i].address,
+          email: data[i].email,
+        });
+        if (data[i].admin === true) {
+          onAdmin(true);
+        }
         history.push("/");
       } else if (data[i].email !== formData.username) {
         setInfo({
@@ -95,6 +106,8 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   onUserLogin: (islogin) => dispatch(userHasLoggedIn(islogin)),
+  onAdmin: (isAdmin) => dispatch(admin(isAdmin)),
+  onCurrentUser: (currentUser) => dispatch(currentUserLogin(currentUser)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(LoginForm);

@@ -12,3 +12,7 @@
   padding-left: 20px;
   padding-top: 10px;
 }
+
+.filters-container label {
+  font-size: 1.2em;
+}

@@ -2,11 +2,11 @@ export const SearchBar = () => {
   const onSearch = (e) => {
     e.preventDefault();
 
-    const text = document.getElementById("searchBarInput").value.toLowerCase(); 
+    const text = document.getElementById("searchBarInput").value.toLowerCase();
     let elementos = document.getElementsByClassName("news-container");
     if (text.length > 0) {
       for (let elemento of elementos) {
-         if (elemento.innerText.toLowerCase().includes(text)) {
+        if (elemento.innerText.toLowerCase().includes(text)) {
           elemento.classList.add("visible");
         } else {
           elemento.classList.add("hidden");
@@ -21,17 +21,17 @@ export const SearchBar = () => {
   };
 
   return (
-    <form class="d-flex" id="searchBar" onSubmit={onSearch}>
+    <form className="d-flex" id="searchBar" onSubmit={onSearch}>
       <input
-        class="form-control rounded"
+        className="form-control rounded"
         type="search"
         placeholder="Buscar"
         aria-label="Search"
         id="searchBarInput"
         aria-describedby="search-addon"
       ></input>
-      <button class="btn btn-outline-primary" type="submit">
-       &#x1f50d;&#xfe0e;
+      <button className="btn btn-outline-primary" type="submit">
+        &#x1f50d;&#xfe0e;
       </button>
     </form>
   );

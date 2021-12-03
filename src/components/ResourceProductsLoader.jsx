@@ -13,14 +13,10 @@ const ResourceProductsLoader = ({
     (async () => {
       const response = await fetch(resourceUrl);
       const data = await response.json();
-      console.log("Data");
-      console.log(data);
+
       let productsFiltered = [];
-      console.log("CategoryFilters");
-      console.log(categoryFilters);
-      console.log("SorterFilters");
-      console.log(sorterFilters);
-      if (!categoryFilters.some((element) => element === "Todo")) {
+
+      if (categoryFilters != null && categoryFilters.length > 0) {
         for (let i = 0; i < categoryFilters.length; i++) {
           productsFiltered = data.filter(
             (product) => product.category === categoryFilters[i]
@@ -30,7 +26,7 @@ const ResourceProductsLoader = ({
         productsFiltered = data;
       }
 
-      if (sorterFilters != null) {
+      if (sorterFilters != null && sorterFilters.length > 0) {
         for (let i = 0; i < sorterFilters.length; i++) {
           if (sorterFilters[i] === "Precio mas bajo") {
             // sort by price ascending
@@ -70,8 +66,7 @@ const ResourceProductsLoader = ({
           }
         }
       }
-      console.log("DataFinal");
-      console.log(productsFiltered);
+
       setState(productsFiltered);
     })();
   }, [resourceUrl, categoryFilters, sorterFilters]);

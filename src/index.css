@@ -32,6 +32,7 @@ code {
 @import url(./assets/css/components/searchBar.css);
 @import url(./assets/css/components/verticalLinearStepper.css);
 @import url(./assets/css/components/userInfo.css);
+@import url(./assets/css/components/bill.css);
 
 /* PARTS */
 @import url(./assets/css/parts/formSection.css);

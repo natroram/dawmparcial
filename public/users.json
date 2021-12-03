@@ -1,14 +1,34 @@
 [
     {
+        "admin": true,
         "firstname": "Javier",
         "lastname": "Vega",
         "address": "Florida norte",
         "email": "javavega@espol.edu.ec",
         "password": "123",
         "image": "img/users/JavierVega.jpg",
-        "cart": []
+        "cart": [    {
+            "image": "img/products/brownies.jpg",
+            "name": "Brownie",
+            "category": "Brownie",
+            "price": 1.00,
+            "description": "Brownie de chocolate"
+        },    {
+            "image": "img/products/brownies.jpg",
+            "name": "Brownie",
+            "category": "Brownie",
+            "price": 1.00,
+            "description": "Brownie de chocolate"
+        },    {
+            "image": "img/products/brownies.jpg",
+            "name": "Brownie",
+            "category": "Brownie",
+            "price": 1.00,
+            "description": "Brownie de chocolate"
+        }]
     },
     {
+        "admin": false,
         "firstname": "Fabrizzio",
         "lastname": "Ontaneda",
         "address": "Sauces",
@@ -18,6 +38,7 @@
         "cart": []
     },
     {
+        "admin": false,
         "firstname": "Aaron",
         "lastname": "Franco",
         "address": "Villa club",
@@ -27,6 +48,7 @@
         "cart": []
     },
     {
+        "admin": false,
         "firstname": "Natalia",
         "lastname": "Ramirez",
         "address": "Samborondon",
