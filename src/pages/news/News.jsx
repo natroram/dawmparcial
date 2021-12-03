@@ -6,7 +6,12 @@ export const News = () => {
   return (
     <div id="news">
       <div className="container">
-        <h1 className="text-center">Noticias</h1>
+        <spam className="picture">
+        <img src="./img/BienvenidaNEW.jpg" alt="No se encuentra la foto disponible :(" className="imgPicture"></img>
+        </spam>
+      <div id="titulo">
+        <h2>Noticias</h2>
+      </div>
         <SearchBar></SearchBar>
         <ResourceLoader resourceUrl="/news.json" resourceName="newsInfoList">
           <NewsList></NewsList>
