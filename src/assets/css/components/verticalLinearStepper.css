@@ -1,0 +1,25 @@
+.proceso-stepper {
+  margin: 3em 0 !important;
+  padding-bottom: 10em;
+  display: flex;
+  justify-content: center;
+}
+
+div[class="MuiBox-root css-16r9pk3"] {
+  margin: 0 auto;
+}
+
+.proceso-stepper span {
+  font-size: 1.2em;
+}
+
+.proceso-stepper p {
+  font-size: 1em;
+}
+
+.proceso-stepper circle {
+  color: var(--colorClaro);
+}
+.proceso-stepper text {
+  color: var(--colorOscuro);
+}

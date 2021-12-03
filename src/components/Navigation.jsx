@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { useRef, useEffect } from "react";
-const Navigation = ({ userIsLogin }) => {
+import { userHasLoggedIn } from "../actions";
+
+const Navigation = ({ userIsLogin, onUserLogin }) => {
   const isMountedRef = useRef(true);
   useEffect(
     () => () => {
@@ -53,18 +55,28 @@ const Navigation = ({ userIsLogin }) => {
             </li>
             {userIsLogin ? (
               <>
-                {console.log("userIsLogin from Navigation" + userIsLogin)}
                 <li>
                   <Link to="/usuario">Profile</Link>
                 </li>
                 <li>
                   <Link to="/carrito">Cart</Link>
                 </li>{" "}
+                <li className="sinEfecto">
+                  <Link to="/">
+                    <button
+                      id="loginButton"
+                      onClick={() => {
+                        onUserLogin(false);
+                      }}
+                    >
+                      Cerrar Sesión
+                    </button>
+                  </Link>
+                </li>
               </>
             ) : (
               <>
                 {" "}
-                {console.log("userIsLogin from Navigation" + userIsLogin)}
                 <li className="sinEfecto">
                   <Link to="/login">
                     <button id="loginButton">Iniciar Sesión</button>
@@ -88,4 +100,8 @@ const mapStateToProps = (state) => ({
   userIsLogin: state.appReducer.userIsLogin,
 });
 
-export default connect(mapStateToProps)(Navigation);
+const mapDispatchToProps = (dispatch) => ({
+  onUserLogin: (islogin) => dispatch(userHasLoggedIn(islogin)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navigation);

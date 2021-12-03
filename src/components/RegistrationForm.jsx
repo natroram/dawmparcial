@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { updateJSON } from "../utils/updateJSON";
 
 export const RegistrationForm = () => {
   const [info, setInfo] = useState(null);
@@ -21,7 +20,6 @@ export const RegistrationForm = () => {
     const data = await response.json();
     if (!data.some((element) => element === newUser)) {
       data.push(newUser);
-      updateJSON("/users.json", data);
       setInfo({
         message: "User Added Successfully!",
       });
