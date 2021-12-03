@@ -55,7 +55,6 @@ const Navigation = ({ userIsLogin, onUserLogin }) => {
             </li>
             {userIsLogin ? (
               <>
-                {console.log("userIsLogin from Navigation" + userIsLogin)}
                 <li>
                   <Link to="/usuario">Profile</Link>
                 </li>
@@ -78,7 +77,6 @@ const Navigation = ({ userIsLogin, onUserLogin }) => {
             ) : (
               <>
                 {" "}
-                {console.log("userIsLogin from Navigation" + userIsLogin)}
                 <li className="sinEfecto">
                   <Link to="/login">
                     <button id="loginButton">Iniciar Sesión</button>

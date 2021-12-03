@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import ContactUs from "../pages/contact/ContactUs";
 
 import Home from "../pages/home/Home";
-import Shop from "../pages/shop/Shop";
+import { Shop } from "../pages/shop/Shop";
 import OurTeam from "../pages/team/OurTeam";
 import Profile from "../pages/profile/Profile";
 import Cart from "../pages/cart/Cart";

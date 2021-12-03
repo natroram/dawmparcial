@@ -1,26 +1,32 @@
 import ProductList from "./parts/ProductList";
 import { SplitScreen } from "../../components/SplitScreen";
 import { Filters } from "./parts/Filters";
-import { ResourceLoader } from "../../components/ResourceLoader";
+import ResourceProductsLoader from "../../components/ResourceProductsLoader";
+import { useRef, useEffect } from "react";
 
-const Shop = () => {
+export const Shop = () => {
+  const isMountedRef = useRef(true);
+  useEffect(
+    () => () => {
+      isMountedRef.current = false;
+    },
+    []
+  );
   return (
     <div>
       <div id="shop">
         <div className="container">
           <SplitScreen leftWeight={1} rightWeight={3}>
             <Filters></Filters>
-            <ResourceLoader
+            <ResourceProductsLoader
               resourceUrl="/products.json"
               resourceName="productsList"
             >
               <ProductList></ProductList>
-            </ResourceLoader>
+            </ResourceProductsLoader>
           </SplitScreen>
         </div>
       </div>
     </div>
   );
 };
-
-export default Shop;
